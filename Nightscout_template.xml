@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Nightscout</Name>
   <Repository>nightscout/cgm-remote-monitor-travis:latest</Repository>
-  <Registry>https://registry.hub.docker.com/r/nightscout/cgm-remote-monitor-development</Registry>
+  <Registry>https://registry.hub.docker.com/r/nightscout/cgm-remote-monitor-travis</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
@@ -43,10 +43,10 @@ Configuration of Nightscout is done over variables that are passed through Docke
   <Data/>
   <Labels/>
   <Config Name="WebUI port" Target="1337" Default="1337" Mode="tcp" Description="Container Port: 1337" Type="Port" Display="always" Required="true" Mask="false">1337</Config>
-  <Config Name="MongoDB Database" Target="MONGO_CONNECTION" Default="mongodb://<db-user>:<db-password>@<mongodb-instance>:<port>/<db-name>" Mode="" Description="Container Variable: MONGO_CONNECTION" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MongoDB Database" Target="MONGO_CONNECTION" Default="mongodb://db-user:db-password@mongodb-instance:port/db-name" Mode="" Description="Container Variable: MONGO_CONNECTION" Type="Variable" Display="always" Required="true" Mask="false">mongodb://db-user:db-password@mongodb-instance:port/db-name</Config>
   <Config Name="Unit" Target="DISPLAY_UNITS" Default="" Mode="" Description="Set to mg/dl or mmol" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="URL" Target="BASE_URL" Default="" Mode="" Description="Container Variable: BASE_URL" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="API_SECRET" Target="API_SECRET" Default="" Mode="" Description="Container Variable: API_SECRET \n Should be a complex key" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="API_SECRET" Target="API_SECRET" Default="" Mode="" Description="Container Variable: API_SECRET    Should be a complex key" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="ENABLE" Target="ENABLE" Default="" Mode="" Description="Container Variable: ENABLE" Type="Variable" Display="always" Required="false" Mask="false">delta direction upbat timeago devicestatus errorcodes ar2 simplealarms profile</Config>
   <Config Name="BG_HIGH" Target="BG_HIGH" Default="" Mode="" Description="Container Variable: BG_HIGH" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="BG_LOW" Target="BG_LOW" Default="" Mode="" Description="Container Variable: BG_LOW" Type="Variable" Display="always" Required="false" Mask="false"></Config>
