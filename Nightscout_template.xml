@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Nightscout</Name>
-  <Repository>nightscout/cgm-remote-monitor-travis:latest</Repository>
-  <Registry>https://registry.hub.docker.com/r/nightscout/cgm-remote-monitor-travis</Registry>
+  <Repository>nightscout/cgm-remote-monitor:latest</Repository>
+  <Registry>https://hub.docker.com/r/nightscout/cgm-remote-monitor</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
