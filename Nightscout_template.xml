@@ -54,5 +54,5 @@ Configuration of Nightscout is done over variables that are passed through Docke
   <Config Name="BG_TARGET_TOP" Target="BG_TARGET_TOP" Default="" Mode="" Description="Container Variable: BG_TARGET_TOP" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="THEME" Target="THEME" Default="" Mode="" Description="Container Variable: THEME" Type="Variable" Display="always" Required="false" Mask="false">colors</Config>
   <Config Name="TIME_FORMAT" Target="TIME_FORMAT" Default="" Mode="" Description="Container Variable: TIME_FORMAT" Type="Variable" Display="always" Required="false" Mask="false">24</Config>
-  <Config Name="INSECURE_USE_HTTP" Target="INSECURE_USE_HTTP" Default="" Mode="" Description="Container Variable: INSECURE_USE_HTTP&#13;&#10;Set to true if used with reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="INSECURE_USE_HTTP" Target="INSECURE_USE_HTTP" Default="" Mode="" Description="Container Variable: INSECURE_USE_HTTP&#13;&#10;Set to true if used with reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
 </Container>
